@@ -1,30 +1,23 @@
-## 一个小框架：一个完整支持 unicode 的 cookie 读取/写入器
+//
+//   :: cookies.js ::
+//
+//   A complete cookies reader/writer framework with full unicode support.
+//
+//   https://developer.mozilla.org/en-US/docs/DOM/document.cookie
+//
+//   This framework is released under the GNU Public License, version 3 or later.
+//   http://www.gnu.org/licenses/gpl-3.0-standalone.html
+//
+//   Syntaxes:
+//
+//   * docCookies.setItem(name, value[, end[, path[, domain[, secure]]]])
+//   * docCookies.getItem(name)
+//   * docCookies.removeItem(name[, path], domain)
+//   * docCookies.hasItem(name)
+//   * docCookies.keys()
+//
 
-
-### 代码
-```javascript
-/*\
-|*|
-|*|  :: cookies.js ::
-|*|
-|*|  A complete cookies reader/writer framework with full unicode support.
-|*|
-|*|  https://developer.mozilla.org/en-US/docs/DOM/document.cookie
-|*|
-|*|  This framework is released under the GNU Public License, version 3 or later.
-|*|  http://www.gnu.org/licenses/gpl-3.0-standalone.html
-|*|
-|*|  Syntaxes:
-|*|
-|*|  * docCookies.setItem(name, value[, end[, path[, domain[, secure]]]])
-|*|  * docCookies.getItem(name)
-|*|  * docCookies.removeItem(name[, path], domain)
-|*|  * docCookies.hasItem(name)
-|*|  * docCookies.keys()
-|*|
-\*/
-
-// 一个小框架：一个完整支持 unicode 的 cookie 读取/写入器
+// 一个完整支持 unicode 的 cookie 读取/写入器
 var docCookies = {
   getItem: function (sKey) {
     return (
@@ -99,25 +92,3 @@ var docCookies = {
     return aKeys;
   },
 };
-```
-### 用法
- - 写入 cookie
-    ```javascript
-    docCookies.setItem(name, value[, end[, path[, domain[, secure]]]])
-    ```
-  - 获取 cookie
-    ```javascript
-    docCookies.getItem(name)
-    ```
- - 移除 cookie
-    ```javascript
-    docCookies.removeItem(name[, path],domain)
-    ```
- - 检测 cookie
-    ```javascript
-    docCookies.hasItem(name)
-    ```
-  - 得到所有 cookie 的列表
-    ```javascript
-    docCookies.keys()
-    ```
