@@ -35,10 +35,10 @@ const eventHub = {
   },
 };
 
-eventHub.on("click", f1); //监听事件,把f1放到任务队列中（先进先出）
+eventHub.on("click", f1); // 监听事件,把f1放到任务队列中（先进先出）
 
-eventHub.off("click", f1); //取消监听事件
+eventHub.off("click", f1); // 取消监听事件
 
 setTimeout(() => {
-  eventHub.emit("click", "frank"); //触发事件
+  eventHub.emit("click", "frank"); // 触发事件
 }, 3000);
