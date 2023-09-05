@@ -1,7 +1,5 @@
-var previousX;
-var previousY;
-var previousT;
-
+// 监听鼠标移动速度
+let previousX, previousY, previousT;
 window.addEventListener("mousemove", function (event) {
   if (
     previousX !== undefined &&

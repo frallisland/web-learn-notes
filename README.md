@@ -1,2 +1,3 @@
-# jsLearnCode
-There are some useful code of javascript that is oridanary learing recording.
+# web-learn-notes
+
+本仓库用于记录前端学习中常见的知识，包括 DOM 操作、工具函数和框架知识等多个方面。
